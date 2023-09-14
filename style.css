@@ -46,7 +46,8 @@ body {
   background-color: red;
 }
 
-.left, .right {
+.left,
+.right {
   display: flex;
   gap: 32px;
   height: 100%;
@@ -164,7 +165,7 @@ body {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 280px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 999;
 }
 
@@ -178,4 +179,23 @@ body {
   gap: 8px;
   border-radius: 8px;
   padding: 8px 4px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.card img {
+  width: 350px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1vw);
+  grid-gap: 240px;
+  margin: 0 32px;
 }
